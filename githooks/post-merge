@@ -1,5 +1,9 @@
 #!/bin/bash
 echo "post merge hook run"
+echo "status"
+git status
+echo "diff"
 git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD
+echo "var"
 changed_files="$(git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD)"
 echo "$changed_files"
