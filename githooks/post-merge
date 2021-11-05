@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 set -o xtrace
 echo "post merge hook run"
 echo "status"
