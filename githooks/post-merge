@@ -11,3 +11,7 @@ echo "$changed_files"
 check_run() {
   echo "$changed_files" | grep -E --quiet "$1" && eval "$2"
 }
+
+check_run models/jw-core "cd apps/harness && npm -v && cd - && cd apps/spa && npm -v && cd -"
+check_run models/naan "cd apps/harness && npm -v && cd - && cd apps/spa && npm -v && cd -"
+check_run models/masala-lib "cd apps/masala-console && npm -v && cd - && cd apps/masala-server && npm -v && cd -"
