@@ -1,7 +1,3 @@
-Here's a sample README for your GitHub repository:
-
----
-
 # test-hooks
 
 ## Description
